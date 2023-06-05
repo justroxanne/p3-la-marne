@@ -1,6 +1,6 @@
 const userRouter = require('./UserRoute');
 const adminRouter = require('./AdminRoute');
-const adressesRouter = require('./AdressesRoute');
+const addressesRouter = require('./AdressesRoute');
 
 
-module.exports = { userRouter, adminRouter,adressesRouter };
+module.exports = { userRouter, adminRouter,addressesRouter };

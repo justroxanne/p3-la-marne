@@ -1,5 +1,5 @@
 const express = require('express');
-const { userRouter, movieRouter } = require('./src/routes');
+const { userRouter, addressesRouter } = require('./src/routes');
 const app = express();
 
 app.use(express.json());
@@ -12,7 +12,9 @@ APIRouter.get('/version', function (req, res) {
 });
 
 APIRouter.use('/users', userRouter);
-APIRouter.use('/movies', movieRouter);
+APIRouter.use('/addresses', addressesRouter);
+
+
 
 app.use('/api', APIRouter);
 
