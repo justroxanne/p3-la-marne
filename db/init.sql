@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS `la_marne_labels`.`users` (
   `raison_sociale` VARCHAR(255) NOT NULL,
   `firstname` VARCHAR(80) NOT NULL,
   `lastname` VARCHAR(80) NOT NULL,
-  `siret` INT NOT NULL COMMENT '14 chiffres obligatoires',
+  `siret` VARCHAR(14) NOT NULL COMMENT '14 chiffres obligatoires',
   `telephone` INT NOT NULL,
   `email` VARCHAR(90) NOT NULL,
   `password` VARCHAR(90) NOT NULL,
