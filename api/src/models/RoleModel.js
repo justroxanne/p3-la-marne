@@ -2,7 +2,7 @@ const BaseModel = require('./BaseModel');
 
 class RoleModel extends BaseModel {
   constructor() {
-    super('Roles');
+    super('roles');
   }
 }
 
