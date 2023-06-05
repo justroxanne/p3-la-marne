@@ -1,5 +1,5 @@
 const express = require('express');
-const { userRouter, adminRouter, stepRouter } = require('./src/routes');
+const { userRouter, adminRouter, stepRouter, categoryRouter, roleRouter, statusRouter } = require('./src/routes');
 const app = express();
 
 app.use(express.json());
@@ -12,6 +12,9 @@ APIRouter.get('/version', function (req, res) {
 });
 
 APIRouter.use('/users', userRouter);
+APIRouter.use('/categories', categoryRouter);
+APIRouter.use('/roles', roleRouter);
+APIRouter.use('/status', statusRouter);
 APIRouter.use('/admins', adminRouter);
 APIRouter.use('/steps', stepRouter);
 
