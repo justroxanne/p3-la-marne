@@ -1,5 +1,5 @@
 const express = require('express');
-const { userRouter } = require('./src/routes');
+const { userRouter, adminRouter, stepRouter, categoryRouter, roleRouter, statusRouter } = require('./src/routes');
 const app = express();
 
 app.use(express.json());
@@ -12,9 +12,14 @@ APIRouter.get('/version', function (req, res) {
 });
 
 APIRouter.use('/users', userRouter);
+APIRouter.use('/categories', categoryRouter);
+APIRouter.use('/roles', roleRouter);
+APIRouter.use('/status', statusRouter);
+APIRouter.use('/admins', adminRouter);
+APIRouter.use('/steps', stepRouter);
+
 app.use('/api', APIRouter);
 
 app.listen(8080, function () {
   console.log('API is running on 8080');
 });
-git 

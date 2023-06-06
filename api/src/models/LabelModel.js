@@ -5,8 +5,10 @@ class LabelModel extends BaseModel {
     super('labels');
   }
 
+  //a verifier si toujours d'utilité
   createLabel() {
-    return this.db.query(`SELECT * FROM ${this.table}`);
+    return this.db //donnée dynamique de la db
+    .query(`INSERT INTO ${this.table} (name, category) VALUES (?, ?)`, [this.name, this.category]);
   }
 }
 

@@ -1,9 +1,18 @@
 const UserController = require('./UserController');
 const AdminController = require('./AdminController');
-const LabelController = require('./LabelController');
+const CategoryController = require('./CategoryController');
+const RoleController = require('./RoleController');
+const StatusController = require('./StatusController');
+const StepController = require('./StepController');
+const AdressesController = require('./AdressesController');
+
 
 module.exports = {
   UserController,
+  AdressesController,
   AdminController,
-  LabelController,
+  CategoryController,
+  RoleController,
+  StatusController,
+  StepController,
 };

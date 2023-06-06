@@ -7,12 +7,13 @@ class LabelController extends BaseController {
     this.model = new LabelModel();
   }
 
-  createLabel(){
-    this.db
-      .query("INSERT INTO labels () VALUES()")
-      .create(this.req.params)
-      .then(([results]) => this.sendJson(results));
-  }
+//   createLabel(){
+//     this.model.name = this.req.body.name;
+//     this.model.category = this.req.body.category;
+//     this.model.createLabel()
+//       .then(([results]) => this.sendJson(results))
+//       .catch(error => this.sendError(error));
+// }
 }
 
 module.exports = LabelController;
