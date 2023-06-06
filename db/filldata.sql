@@ -14,6 +14,6 @@ INSERT INTO steps (name, status_id, label_id) VALUES ('inscription', 6 , 1), ('r
 
 INSERT INTO admins (firstname, lastname, email, password, status_id) VALUES ('Cedric', 'Perot', 'cedric.perot@gmail.com', 'tototiti', 1), ('Roxanne', 'Lucas', 'lucas.roxanne@gmail.com', 'tatatutu', 2);
 
-INSERT INTO users (raison_sociale, firstname, lastname, siret, telephone, email, password, site_web_url, address_id, role_id, status_id, step_id) VALUES ('la super boite', 'Elon', 'Musk', '12345678912345', 0666666666, 'elon.musk@tesla.com','password', 'www.tesla.com', 1, 2, 3, 1);
+INSERT INTO users (company_name, firstname, lastname, siret, phone, email, password, website_url, address_id, role_id, status_id, step_id) VALUES ('la super boite', 'Elon', 'Musk', '12345678912345', 0666666666, 'elon.musk@tesla.com','password', 'www.tesla.com', 1, 2, 3, 1);
 
 
