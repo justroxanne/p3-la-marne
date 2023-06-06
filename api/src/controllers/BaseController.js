@@ -19,6 +19,27 @@ class BaseController {
       .then(([results]) => this.sendJson(results));
   }
 
+  create() {
+    this.model.create(this.req.body).then(([result]) => {
+      this.res
+        .location(`/api/${this.table}/${result.insertId}`)
+        .sendStatus(201);
+    });
+  }
+
+  update() {
+    this.model.update(this.req.body, this.req.params.id)
+    .then(([result]) => {
+      this.res
+        .location(`/api/${this.table}/${result.insertId}`)
+        .sendStatus(204);
+    });;
+  }
+
+  delete() {
+    this.model.delete(this.req.params.id);
+  }
+
   sendJson(data) {
     this.res.status(200).json(data);
   }

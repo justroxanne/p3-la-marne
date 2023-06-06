@@ -4,7 +4,7 @@ const categoryRouter = require('./CategoryRoute');
 const roleRouter = require('./RoleRoute');
 const statusRouter = require('./StatusRoute');
 const stepRouter = require('./StepRoute');
-const adressesRouter = require('./AdressesRoute');
+const addressesRouter = require('./AdressesRoute');
+const labelRouter = require('./LabelRoute');
 
-
-module.exports = { userRouter, adminRouter, categoryRouter, roleRouter, statusRouter, stepRouter, adressesRouter };
+module.exports = { userRouter, adminRouter, categoryRouter, roleRouter, statusRouter, stepRouter, addressesRouter, labelRouter };
