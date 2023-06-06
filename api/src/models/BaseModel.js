@@ -29,13 +29,14 @@ class BaseModel {
     );
   }
 
-  update(incoming, id) {// a push...
+  update(incoming, id) {
+    // a push...
     const keys = Object.keys(incoming);
     const values = Object.values(incoming);
     return this.db.query(
-      `UPDATE ${this.table} SET ${keys.map((value) => value + ' = ?')} WHERE id = ?`,
-      [...values, id]
-    )
+      `UPDATE ${this.table} SET ${keys.map((value) => '? = ?')} WHERE id = ?`,
+      [...keys, ...values, id]
+    );
   }
 
   delete(id) {

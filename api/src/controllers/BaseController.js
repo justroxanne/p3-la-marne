@@ -28,16 +28,17 @@ class BaseController {
   }
 
   update() {
-    this.model.update(this.req.body, this.req.params.id)
-    .then(([result]) => {
+    this.model.update(this.req.body, this.req.params.id).then(([result]) => {
       this.res
         .location(`/api/${this.table}/${result.insertId}`)
         .sendStatus(204);
-    });;
+    });
   }
 
   delete() {
-    this.model.delete(this.req.params.id);
+    this.model.delete(this.req.params.id).then(([result]) => {
+      this.res.status(204).send('No Content');
+    });
   }
 
   sendJson(data) {
