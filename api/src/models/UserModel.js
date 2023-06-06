@@ -5,29 +5,6 @@ class UserModel extends BaseModel {
     super('users');
   }
 
-  // createUser() {
-  //   return this.db.query(
-  //     `INSERT INTO users (company_name,
-  //     firstname,
-  //     lastname,
-  //     siret,
-  //     telephone,
-  //     email,
-  //     password,
-  //     website) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
-  //     [
-  //       company_name,
-  //       firstname,
-  //       lastname,
-  //       siret,
-  //       telephone,
-  //       email,
-  //       password,
-  //       website,
-  //     ]
-  //   );
-  // }
-
   // updateUser() {
   //   const {
   //     company_name,
@@ -54,12 +31,6 @@ class UserModel extends BaseModel {
   //       website,
   //     ]
   //   );
-  // }
-
-  // deleteUser(req, res) {
-  //   const id = parseInt(req.params.id);
-
-  //   return this.db.query(`DELETE FROM users WHERE id=?`, [id]);
   // }
 }
 

@@ -19,10 +19,10 @@ USE `la_marne_labels` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `la_marne_labels`.`addresses` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `number` INT NULL,
+  `number` INT,
   `type` VARCHAR(90) NOT NULL,
   `street_name` VARCHAR(255) NOT NULL,
-  `complement` VARCHAR(255) NULL,
+  `complement` VARCHAR(255),
   `zip_code` INT NOT NULL,
   `city` VARCHAR(90) NOT NULL,
   PRIMARY KEY (`id`))
