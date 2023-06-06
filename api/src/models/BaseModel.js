@@ -29,6 +29,15 @@ class BaseModel {
     );
   }
 
+  update(incoming, id) {// a push...
+    const keys = Object.keys(incoming);
+    const values = Object.values(incoming);
+    return this.db.query(
+      `UPDATE ${this.table} SET ${keys.map((value) => value + ' = ?')} WHERE id = ?`,
+      [...values, id]
+    )
+  }
+
   delete(id) {
     return this.db.query(`DELETE FROM ${this.table} WHERE id=?`, [id]);
   }
