@@ -1,0 +1,30 @@
+.usercard {
+  align-self: center;
+  width: 50dvw;
+  height: 20dvh;
+  background-color: white;
+  background-image: url(../../assets/userprofile.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  box-shadow: 1px 2px 10px grey;
+  border-radius: 12px;
+  z-index: 2;
+  transform: translateY(-2em);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user-infos {
+  width: 70%;
+  padding: 1em;
+  display: flex;
+  line-height: 1.5em;
+  justify-content: space-between;
+}
+
+.user-infos p {
+  display: flex;
+  flex-direction: column;
+}

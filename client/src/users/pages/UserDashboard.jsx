@@ -1,11 +1,12 @@
 import React from 'react';
 import './userDashboard.css';
-import Footer from '../components/Footer';
+import UserCard from '../components/userCard/UserCard';
 
 const UserDashboard = () => {
   return (
-    <div>
-      <h1>hello user</h1>
+    <div className='user-dashboard'>
+      <UserCard />
+      <button>Faire une demande</button>
     </div>
   );
 };
