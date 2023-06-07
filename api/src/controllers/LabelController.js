@@ -9,3 +9,4 @@ class LabelController extends BaseController {
 }
 
 module.exports = LabelController;
+ 
