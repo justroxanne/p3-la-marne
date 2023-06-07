@@ -1,6 +1,6 @@
 .Header{
     height: 33dvh;
-    background-image: url(C:\Users\axelp\Desktop\projet_3\p3-la-marne\client\src\users\assets\backgroundheader.jpg) ;
+    background-image: url('../../assets/backgroundheader.jpg');
     background-position:bottom  ;
     background-size: cover;
     background-position-y:27em ;
@@ -8,5 +8,8 @@
 
 .logo>img{
     width: 10%;
+    padding-top: 0.9em;
 }
+
+
 

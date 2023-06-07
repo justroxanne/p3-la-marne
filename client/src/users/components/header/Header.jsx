@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 
-import logo_marne from'../assets/logoMarne_partenariat_white.png'
+import logo_marne from'../../assets/logoMarne_partenariat_white.png'
 
 const Header = () => {
   return (

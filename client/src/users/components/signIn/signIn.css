@@ -1,0 +1,37 @@
+.signcontainer{
+    display: flex;
+    justify-content: end;
+    padding: 0 1em;
+    padding-top: 0.5em;
+    
+}
+.SignInAndConnect{
+    font-family: sans-serif;
+    background-color: rgba(255,255,255,0.2);
+    display: flex;
+    border-radius: 2px;
+    padding: 10px;
+    gap: 5px;
+    position: relative;
+    top:-14em;
+    color: var(--third-color);
+    border: 1px solid white; 
+}
+
+.line{
+    border-left: 2px solid var(--third-color);
+    height: 1em; 
+}
+
+.signIn,.connexion{
+    font-size: 1em;
+    
+    letter-spacing: 1.2px;
+    cursor: pointer;
+
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

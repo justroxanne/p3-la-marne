@@ -1,10 +1,12 @@
 import React from 'react'
+import SignIn from '../components/signIn/SignIn'
+
 import './home.css'
 
 const Home = () => {
   return (
     <div className='Home'>
-      <h1>Home</h1>
+      <SignIn/>
     </div>
   )
 }
