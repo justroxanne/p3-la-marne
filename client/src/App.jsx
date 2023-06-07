@@ -1,19 +1,21 @@
 import Header from './users/components/Header'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import UserDashboard from './users/pages/UserDashboard';
+import Footer from './users/components/Footer';
+import './App.css';
 
-import './App.css'
 
 function App() {
-
   return (
-   
-      <div>
-        <Header/>
-      <h1>Hello Marne!</h1>
-      </div>
-      
-
-  )
+    <div>
+      <h1>Salut</h1>
+      <Header/>
+      <Routes>
+        <Route path='/user' element={<UserDashboard />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
-
+export default App;
