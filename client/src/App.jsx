@@ -1,14 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import UserDashboard from './users/pages/UserDashboard';
+import Footer from './users/components/Footer';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <div>
+      <h1>Salut</h1>
       <Routes>
-        <Route path='/userdashboard' element={<UserDashboard />} />
+        <Route path='/user' element={<UserDashboard />} />
       </Routes>
-    </Router>
+      <Footer />
+    </div>
   );
 }
 
