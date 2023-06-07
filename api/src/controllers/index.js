@@ -5,7 +5,7 @@ const RoleController = require('./RoleController');
 const StatusController = require('./StatusController');
 const StepController = require('./StepController');
 const AdressesController = require('./AdressesController');
-
+const LabelController = require('./LabelController');
 
 module.exports = {
   UserController,
@@ -15,4 +15,5 @@ module.exports = {
   RoleController,
   StatusController,
   StepController,
+  LabelController,
 };

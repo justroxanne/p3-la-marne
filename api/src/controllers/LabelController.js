@@ -6,7 +6,6 @@ class LabelController extends BaseController {
     super(req, res);
     this.model = new LabelModel();
   }
-
 }
 
 module.exports = LabelController;
