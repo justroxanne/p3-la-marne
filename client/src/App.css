@@ -1,4 +1,10 @@
-*{
+:root {
+  --main-color: #7c9971;
+  --second-color: #5cb245;
+  --third-color: #f5fbf2;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
