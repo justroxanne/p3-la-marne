@@ -1,17 +1,15 @@
-
-import './App.css'
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import UserDashboard from './users/pages/UserDashboard';
 
 function App() {
-
   return (
-   
-      <div>
-      <h1>Hello Marne!</h1>
-      </div>
-      
-
-  )
+    <Router>
+      <Routes>
+        <Route path='/userDashboard' element={<UserDashboard />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
-
+export default App;
