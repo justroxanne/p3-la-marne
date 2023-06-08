@@ -43,7 +43,7 @@ const ModalConnection = ({ isOpen, onClose }) => {
             Si vous n'êtes pas encore inscrits,{' '}
             <Link to="/registration">cliquez ici</Link>
           </p>
-          <button type="submit">Se connecter</button>
+          <button type="submit"><Link to='/user'>Se connecter</Link></button>
         </form>
       </div>
     </div>
