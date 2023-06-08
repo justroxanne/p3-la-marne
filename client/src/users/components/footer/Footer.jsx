@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/logoMarne_partenariat_white.png';
+import Logo from '../../assets/logoMarne_partenariat_white.png';
 import './footer.css';
 
 const Footer = () => {

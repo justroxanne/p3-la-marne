@@ -1,0 +1,81 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  border-radius: 6px;
+}
+
+.button_close {
+  cursor: pointer;
+  font-size: 1.5em;
+  align-self: flex-end;
+  padding-bottom: 0.5em;
+  color: var(--third-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content h2 {
+  color: var(--third-color);
+}
+
+.modal-content p {
+  margin-bottom: 2em;
+  color: var(--third-color);
+}
+
+.modal-content label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+  font-size: 0.6em;
+  color: var(--third-color);
+  flex-direction: column;
+}
+
+.modal-content input {
+  padding: 1em;
+  margin-top: 0.5em;
+  border-radius: 4px;
+  border: none;
+  height: 2em;
+  width: 100%;
+}
+
+.modal-content button {
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: var(--third-color);
+}
+
+.not_sign > a {
+  text-decoration: underline;
+}
+
+.not_sign {
+  font-size: 0.6em;
+}
+
+.modal-content button:hover {
+  opacity: 0.6;
+}
