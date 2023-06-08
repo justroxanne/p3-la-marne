@@ -6,8 +6,9 @@ import './App.css';
 
 function App() {
   return (
-    <div className='app'>
-      <Header />
+
+    <div>
+      <Header/>
       <Routes>
         <Route path='/user' element={<UserDashboard />} />
       </Routes>
