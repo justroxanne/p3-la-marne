@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
 :root {
   --main-color: #7c9971;
   --second-color: #5cb245;
   --third-color: #f5fbf2;
+  --main-font: Inter;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter';
 }
 
+#root,
+.app {
+  width: 100vw;
+}
+
+p {
+  font-weight: 200;
+}
