@@ -1,6 +1,7 @@
 import React from 'react';
 import './userDashboard.css';
 import UserCard from '../components/userCard/UserCard';
+import Footer from '../components/footer/Footer';
 
 const UserDashboard = () => {
   return (

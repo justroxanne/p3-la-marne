@@ -1,6 +1,7 @@
-import React from 'react';
-import './header.css';
-import logo_marne from '../../assets/logoMarne_partenariat_white.png';
+import React from 'react'
+import logo_marne from'../../assets/logoMarne_partenariat_white.png'
+import './header.css'
+
 
 const Header = () => {
   return (

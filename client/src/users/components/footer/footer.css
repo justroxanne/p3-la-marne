@@ -2,6 +2,7 @@
   width: 100%;
   height: 25dvh;
   background-color: var(--main-color);
+  position: absolute;
   bottom: 0;
   display: flex;
   justify-content: space-evenly;

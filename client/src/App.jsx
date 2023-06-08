@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './users/pages/Home';
 import Header from './users/components/header/Header';
 import UserDashboard from './users/pages/UserDashboard';
 import Footer from './users/components/footer/Footer';
@@ -10,6 +11,7 @@ function App() {
     <div>
       <Header/>
       <Routes>
+        <Route path='/' element={<Home/>}/>
         <Route path='/user' element={<UserDashboard />} />
       </Routes>
       <Footer />
