@@ -1,0 +1,60 @@
+.registration-container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 40dvw;
+    min-width: fit-content;
+    min-height: fit-content;
+    background-color: var(--third-color);
+    z-index: 2;
+    transform: translateY(-2em);
+    box-shadow: 1px 2px 5px grey;
+    overflow: auto;
+}
+
+.form {
+    width: 80%;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 1em 1em;
+}
+
+input {
+    border-radius: .2em;
+    border: 2px solid #dedede;  
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.labels{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    gap: .2em;
+}
+
+.streetname {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.button {
+    padding: .85em;
+    border-radius: .5em;
+    border-style: none;
+    background-color: var(--main-color);
+    color: white;
+    transform: translate(50vw, -3.5em);
+    box-shadow: 1px 2px 5px grey;
+}
