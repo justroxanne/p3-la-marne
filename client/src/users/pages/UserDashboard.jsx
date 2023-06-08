@@ -1,6 +1,5 @@
 import React from 'react';
 import './userDashboard.css';
-import Footer from '../components/Footer';
 
 const UserDashboard = () => {
   return (

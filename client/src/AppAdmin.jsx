@@ -1,7 +1,25 @@
-import React from 'react'
+import HeaderAdmin from './admin/components/HeaderAdmin/HeaderAdmin'
+import FooterAdmin from './admin/components/FooterAdmin/FooterAdmin';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AdminDashboard from './admin/pages/AdminDashboard';
+import './AppAdmin.css';
+import AdminIdentity from './admin/components/AdminIdentity/AdminIdentity';
+import DemandeTable from './admin/components/DemandTable/DemandeTable';
 
-export const AppAdmin = () => {
+
+function AppAdmin() {
   return (
-    <div>AppAdmin</div>
-  )
+
+    <div>
+      <HeaderAdmin/>
+      <AdminIdentity/>
+      <DemandeTable/>
+      <Routes>
+        <Route path='/admin/*' element={<AdminDashboard/>} />
+      </Routes>
+      <FooterAdmin/>
+    </div>
+  );
 }
+
+export default AppAdmin;
