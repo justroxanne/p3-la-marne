@@ -1,14 +1,27 @@
 import React, { useState } from 'react';
 import './modalConnection.css';
-import { Link } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 
 const ModalConnection = ({ isOpen, onClose }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [isSubmitEnabled, setSubmitEnabled] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(`Username: ${username}, Password: ${password}`);
+    navigate('/user'); // Naviguer vers "/user" après la soumission du formulaire
+  };
+
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+    setSubmitEnabled(e.target.value !== '' && password !== '');
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+    setSubmitEnabled(username !== '' && e.target.value !== '');
   };
 
   if (!isOpen) return null;
@@ -26,7 +39,7 @@ const ModalConnection = ({ isOpen, onClose }) => {
             <input
               type="email"
               value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              onChange={handleUsernameChange}
               required
             />
           </label>
@@ -35,7 +48,7 @@ const ModalConnection = ({ isOpen, onClose }) => {
             <input
               type="password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={handlePasswordChange}
               required
             />
           </label>
@@ -43,7 +56,9 @@ const ModalConnection = ({ isOpen, onClose }) => {
             Si vous n'êtes pas encore inscrits,{' '}
             <Link to="/registration">cliquez ici</Link>
           </p>
-          <button type="submit"><Link to='/user'>Se connecter</Link></button>
+          <button type="submit" disabled={!isSubmitEnabled}>
+            Se connecter
+          </button>
         </form>
       </div>
     </div>
