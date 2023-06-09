@@ -48,9 +48,15 @@ const RegistrationForm = () => {
                         <input type="text" />
                     </div>
                 </div>
-                <div className='streetname'>
-                    <label htmlFor="streetname">Nom de la rue :</label>
-                    <input type="text" />
+                <div className='formline'>
+                    <div className='streetname'>
+                        <label htmlFor="streetname">Nom de la rue :</label>
+                        <input type="text" />
+                    </div>
+                    <div className='complement'>
+                        <label htmlFor="complement">Complément d'adresse</label>
+                        <input type="text" />
+                    </div>
                 </div>
                 <div className='formline'>
                     <div className='labels'>
