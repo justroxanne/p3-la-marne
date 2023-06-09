@@ -14,6 +14,7 @@
 .modal-content {
   background-color: var(--main-color);
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   padding: 2em;
@@ -24,6 +25,9 @@
   cursor: pointer;
   font-size: 1.5em;
   align-self: flex-end;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
   padding-bottom: 0.5em;
   color: var(--third-color);
 }
@@ -33,12 +37,13 @@
   flex-direction: column;
 }
 
-.modal-content h2 {
+/* .modal-content h2 {
+  margin-top: 2em;
   color: var(--third-color);
-}
+} */
 
 .modal-content p {
-  margin-bottom: 2em;
+  margin: 2em;
   color: var(--third-color);
 }
 
@@ -49,6 +54,9 @@
   font-size: 0.6em;
   color: var(--third-color);
   flex-direction: column;
+}
+.error-message{
+  font-size: 0.6em;
 }
 
 .modal-content input {
