@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
     width: 40dvw;
     min-width: fit-content;
@@ -15,8 +15,6 @@
     overflow: auto;
 }
 
-
-
 .form {
     width: 80%;
     min-width: fit-content;
@@ -26,21 +24,22 @@
     padding: 1em 1em;
 }
 
-input {
+.form input {
     border-radius: .2em;
     border: 2px solid #dedede;  
 }
 
-.line {
+.formline {
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 1em;
 }
 
-.labels{
+.labels {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     max-width: 60%;
     gap: .2em;
 }

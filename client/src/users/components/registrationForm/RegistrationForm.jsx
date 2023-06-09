@@ -8,7 +8,7 @@ const RegistrationForm = () => {
         <div className='registration-container'>
             <h3>Nouvel Utilisateur - Enregistrez-vous :</h3>
             <form className='form'>
-                <div className='line'>
+                <div className='formline'>
                     <div className='labels'>
                         <label htmlFor="company_name">Raison sociale :</label>
                         <input type="text" />
@@ -18,7 +18,7 @@ const RegistrationForm = () => {
                         <input type="text" />
                     </div>
                 </div>
-                <div className='line'>
+                <div className='formline'>
                     <div className='labels'>
                         <label htmlFor="lastname">Nom :</label>
                         <input type="text" />
@@ -28,7 +28,7 @@ const RegistrationForm = () => {
                         <input type="text" />
                     </div>
                 </div>
-                <div className='line'>
+                <div className='formline'>
                     <div className='labels'>
                         <label htmlFor="phone">Numéro de téléphone :</label>
                         <input type="text" />
@@ -38,7 +38,7 @@ const RegistrationForm = () => {
                         <input type="text" />
                     </div>
                 </div>
-                <div className='line'>
+                <div className='formline'>
                     <div className='labels'>
                         <label htmlFor="number">Adresse N°:</label>
                         <input type="text" />
@@ -52,7 +52,7 @@ const RegistrationForm = () => {
                     <label htmlFor="streetname">Nom de la rue :</label>
                     <input type="text" />
                 </div>
-                <div className='line'>
+                <div className='formline'>
                     <div className='labels'>
                         <label htmlFor="zipcode">Code Postal :</label>
                         <input type="text" />
