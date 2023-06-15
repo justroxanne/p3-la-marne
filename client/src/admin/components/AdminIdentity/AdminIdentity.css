@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    z-index: 2;
 }
 
 .box-admin{
@@ -13,6 +13,7 @@
     width: 50%;
     height: 100%;
     background: #FFFFFF;
+    border-radius: 1em;
     border: 1px solid #DEDEDE;
     box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.15);
 }
@@ -27,5 +28,6 @@
 }
 
 .img-profil img{
+    border-radius: 1em;
     width: 100%;
 }

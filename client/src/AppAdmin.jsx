@@ -1,19 +1,19 @@
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeaderAdmin from './admin/components/HeaderAdmin/HeaderAdmin'
 import FooterAdmin from './admin/components/FooterAdmin/FooterAdmin';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AdminDashboard from './admin/pages/AdminDashboard';
-import './AppAdmin.css';
-import AdminIdentity from './admin/components/AdminIdentity/AdminIdentity';
 import DemandeTable from './admin/components/DemandTable/DemandeTable';
-
+import Historytable from './admin/components/HistoryTable/Historytable';
+import './AppAdmin.css';
 
 function AppAdmin() {
   return (
 
     <div>
       <HeaderAdmin/>
-      <AdminIdentity/>
       <DemandeTable/>
+      <Historytable/>
       <Routes>
         <Route path='/admin/*' element={<AdminDashboard/>} />
       </Routes>
